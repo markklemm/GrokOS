@@ -28,7 +28,7 @@
             "wellKnown": "https://github.com/markklemm/GrokOS/blob/develop/.well-known/funding-manifest-urls"
             },
             "licenses": ["spdx:AGPL-3.0"],
-            "tags": ["ai", "operating-system", "privacy"]
+            "tags": ["ai", "os", "privacy"]
         }
     ],
     "funding": {
