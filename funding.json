@@ -47,9 +47,9 @@
                 "status": "active",
                 "name": "Laptops and Phone Parts",
                 "description": "I need a test laptop, a demo laptop, and Raspberry Pi and antennas for phone parts.",
-                "amount": 2400,
+                "amount": 4500,
                 "currency": "AUD",
-                "frequency": "annually",
+                "frequency": "yearly",
                 "channels": ["mybank"]
             },
             {
