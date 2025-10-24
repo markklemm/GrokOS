@@ -19,16 +19,16 @@
         {
             "guid": "grokos",
             "name": "GrokOS",
-            "description": "GrokOS is the operating system that kills app stores and ad-heavy browsers, putting you in control. Boot to a lean Grok interface, say “Hi Grok, build a fitness tracker” or “show me news without ads,” and xAI’s Grok generates it instantly—no downloads, no Big Tech gatekeepers. Built on Buildroot, GrokOS runs on your phone or PC’s raw power, offloading heavy tasks to xAI’s servers via Starlink’s global internet. It’s privacy-first, dodging Australia’s Dec 2025 social media ban with private-only features. GrokOS is the Model T of tech—freedom, simplicity, and user-driven innovation.",
+            "description": "GrokOS is the operating system that kills app stores and ad-heavy browsers, putting you in control...",
             "webpageUrl": {
-                "url": "https://github.com/markklemm/GrokOS"
+            "url": "https://github.com/markklemm/GrokOS"
             },
             "repositoryUrl": {
-                "url": "https://github.com/markklemm/GrokOS",
-                "wellKnown": "https://github.com/markklemm/GrokOS/blob/develop/.well-known/funding-manifest-urls"
+            "url": "https://github.com/markklemm/GrokOS",
+            "wellKnown": "https://github.com/markklemm/GrokOS/blob/develop/.well-known/funding-manifest-urls"
             },
             "licenses": ["spdx:AGPL-3.0"],
-            "tags": ["AI", "OperatingSystem", "Privacy"]
+            "tags": ["ai", "operating-system", "privacy"]
         }
     ],
     "funding": {
