@@ -1,0 +1,68 @@
+{
+    "version": "v1.0.0",
+    "entity": {
+        "type": "individual",
+        "role": "maintainer",
+        "name": "Mark Klemm",
+        "displayName": "GrokOS (demo)",
+        "email": "mark@klemm.technology",
+        "description": "I just want to use good systems in good ways and keep getting stuck having to build them myself.",
+        "webpageUrl": {
+            "url": "https://klemm.technology"
+        },
+        "social": {
+            "github": "markklemm",
+            "twitter": "klemm_tech"
+        }
+    },
+    "projects": [
+        {
+            "guid": "grokos",
+            "name": "GrokOS",
+            "description": "GrokOS is the operating system that kills app stores and ad-heavy browsers, putting you in control. Boot to a lean Grok interface, say “Hi Grok, build a fitness tracker” or “show me news without ads,” and xAI’s Grok generates it instantly—no downloads, no Big Tech gatekeepers. Built on Buildroot, GrokOS runs on your phone or PC’s raw power, offloading heavy tasks to xAI’s servers via Starlink’s global internet. It’s privacy-first, dodging Australia’s Dec 2025 social media ban with private-only features. GrokOS is the Model T of tech—freedom, simplicity, and user-driven innovation.",
+            "webpageUrl": {
+                "url": "https://github.com/markklemm/GrokOS"
+            },
+            "repositoryUrl": {
+                "url": "https://github.com/markklemm/GrokOS",
+                "wellKnown": "https://github.com/markklemm/GrokOS/blob/develop/.well-known/funding-manifest-urls"
+            },
+            "licenses": ["spdx:AGPL-3.0"],
+            "tags": ["AI", "OperatingSystem", "Privacy"]
+        }
+    ],
+    "funding": {
+        "channels": [
+            {
+                "guid": "mybank",
+                "type": "bank",
+                "name": "Direct Bank Transfer",
+                "address": "",
+                "description": "Will accept direct bank transfers. Please email me for details."
+            }
+        ],
+        "plans": [
+            {
+                "guid": "hardware",
+                "status": "active",
+                "name": "Laptops and Phone Parts",
+                "description": "I need a test laptop, a demo laptop, and Raspberry Pi and antennas for phone parts.",
+                "amount": 2400,
+                "currency": "AUD",
+                "frequency": "annually",
+                "channels": ["mybank"]
+            },
+            {
+                "guid": "angel-plan",
+                "status": "active",
+                "name": "Goodwill Plan",
+                "description": "Pay anything you wish to show your goodwill for the project.",
+                "amount": 0,
+                "currency": "AUD",
+                "frequency": "one-time",
+                "channels": ["mybank"]
+            }
+        ],
+        "history": []
+    }
+}
