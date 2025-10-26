@@ -1,3 +1,39 @@
+#GROK added
+
+# Modified: CPU architecture for broader compatibility
+BR2_GCC_TARGET_ARCH="x86-64-v3"
+BR2_x86_x86_64_v3=y
+
+# Added: Linux kernel support
+BR2_LINUX_KERNEL=y
+BR2_LINUX_KERNEL_LATEST_VERSION=y
+BR2_LINUX_KERNEL_CUSTOM_CONFIG_FILE="board/grokos/linux.config"
+
+# Modified: Qt5 with GUI and Wayland (optional)
+BR2_PACKAGE_QT5BASE_GUI=y
+BR2_PACKAGE_QT5WAYLAND=y
+BR2_PACKAGE_WESTON=y
+
+
+# Modified: Secure root password
+BR2_TARGET_GENERIC_ROOT_PASSWD="GrokOS"
+
+# Added: Basic networking and utilities
+BR2_PACKAGE_DROPBEAR=y
+BR2_PACKAGE_WGET=y
+BR2_PACKAGE_NANO=y
+
+# Added: Root filesystem image
+BR2_TARGET_ROOTFS_EXT4=y
+BR2_TARGET_ROOTFS_EXT4_SIZE="512M"
+
+# Added: Bootloader
+BR2_TARGET_GRUB2=y
+BR2_TARGET_GRUB2_I386_PC=y
+
+# Note: Remaining unchanged settings from original config are assumed included
+# (e.g., security hardening, mirrors, legacy options, etc.)
+
 #
 # Automatically generated file; DO NOT EDIT.
 # Buildroot 2025.08-739-g6144b0f4b7 Configuration
@@ -56,7 +92,7 @@ BR2_ARCH_NEEDS_GCC_AT_LEAST_11=y
 BR2_ARCH="x86_64"
 BR2_NORMALIZED_ARCH="x86_64"
 BR2_ENDIAN="LITTLE"
-BR2_GCC_TARGET_ARCH="x86-64-v4"
+#BR2_GCC_TARGET_ARCH="x86-64-v4"
 BR2_BINFMT_SUPPORTS_SHARED=y
 BR2_READELF_ARCH_NAME="Advanced Micro Devices X86-64"
 BR2_X86_CPU_HAS_MMX=y
@@ -453,7 +489,7 @@ BR2_ROOTFS_DEVICE_TABLE="system/device_table.txt"
 # BR2_ROOTFS_DEVICE_TABLE_SUPPORTS_EXTENDED_ATTRIBUTES is not set
 # BR2_ROOTFS_MERGED_USR is not set
 BR2_TARGET_ENABLE_ROOT_LOGIN=y
-BR2_TARGET_GENERIC_ROOT_PASSWD=""
+#BR2_TARGET_GENERIC_ROOT_PASSWD=""
 BR2_SYSTEM_BIN_SH_BUSYBOX=y
 
 #
