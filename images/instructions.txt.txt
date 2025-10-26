@@ -1,0 +1,22 @@
+Prep the Asset:
+
+Grab a high-res PNG/SVG of the logo (as above).
+Convert to BMP (24-bit, no compression) for framebuffer compatibility: Use ImageMagick (convert grok-logo.png -resize 1024x768! -colors 256 grok-boot.bmp) or GIMP.
+Size it to your display res (e.g., 1024x768 for VGA fallback).
+
+
+Integrate into Buildroot:
+
+Enable fbsplash (framebuffer splash) in make menuconfig under Target packages > Graphic libraries and apps > fbsplash. It's tiny (~50KB) and hooks into the initramfs.
+Or, for kernel-level: Patch the kernel with bootsplash (via config BR2_TARGET_ROOTFS_INITRAMFS=y and add a post-build script to embed the BMP).
+Place your grok-boot.bmp in the image rootfs (e.g., board/yourboard/post_image.sh to copy it to /etc/bootsplash).
+
+
+Config and Test:
+
+In /etc/fbsplash.conf (or equivalent), set splash.image=grok-boot.bmp and splash.time=5 (seconds per frame if animated).
+For animation flair: Make a simple GIF-like sequence of swirling frames (e.g., 3-5 BMPs fading in) to mimic the disk orbiting—use FFmpeg to generate.
+Boot test: make your image, flash to QEMU or hardware, and watch it load. If it's silent, pair with a custom beep via beep package for that "event horizon" hum.
+
+Potential gotcha: Ensure your kernel has framebuffer support (CONFIG_FB=y)
+
