@@ -7,7 +7,8 @@ BR2_x86_x86_64_v3=y
 # Added: Linux kernel support
 BR2_LINUX_KERNEL=y
 BR2_LINUX_KERNEL_LATEST_VERSION=y
-BR2_LINUX_KERNEL_CUSTOM_CONFIG_FILE="board/grokos/linux.config"
+# BR2_LINUX_KERNEL_CUSTOM_CONFIG_FILE="board/grokos/linux.config"
+BR2_LINUX_KERNEL_DEFCONFIG="x86_64_defconfig"
 
 # Modified: Qt5 with GUI and Wayland (optional)
 BR2_PACKAGE_QT5BASE_GUI=y
