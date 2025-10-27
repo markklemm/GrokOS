@@ -22,7 +22,7 @@ BR2_TARGET_GENERIC_ROOT_PASSWD="GrokOS"
 # Added: Basic networking and utilities
 BR2_PACKAGE_DROPBEAR=y
 BR2_PACKAGE_WGET=y
-BR2_PACKAGE_NANO=y
+BR2_PACKAGE_VI=y
 
 # Added: Root filesystem image
 BR2_TARGET_ROOTFS_EXT4=y
